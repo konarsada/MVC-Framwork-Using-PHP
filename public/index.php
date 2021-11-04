@@ -5,6 +5,15 @@
  */
 
 /**
+ * Composer
+ */
+require '../vendor/autoload.php';
+
+/**
+ * Twig
+ */
+
+/**
  * Autoloader
  */
 spl_autoload_register(function($class) {
