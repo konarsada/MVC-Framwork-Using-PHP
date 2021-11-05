@@ -10,22 +10,6 @@
 require '../vendor/autoload.php';
 
 /**
- * Twig
- */
-
-/**
- * Autoloader
- */
-spl_autoload_register(function($class) {
-    // get the parent directory
-    $root = dirname(__DIR__);
-    $file = $root . "/" . str_replace("\\", "/", $class) . ".php";
-    if(is_readable($file)) {
-        require $root . "/" . str_replace("\\", "/", $class) . ".php";
-    }
-});
-
-/**
  * Routing
  */
 $router = new Core\Router();
