@@ -1,0 +1,29 @@
+[06-Nov-2021 08:20:12 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\Program Files\Ampps\www\public\index.php(30): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\Program Files\Ampps\www\Core\Router.php' on line 121
+[06-Nov-2021 08:20:12 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\Program Files\Ampps\www\public\index.php(30): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in 'C:\Program Files\Ampps\www\Core\Router.php' on line 121
+[06-Nov-2021 08:38:25 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\Program Files\Ampps\www\public\index.php(30): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\Program Files\Ampps\www\Core\Router.php' on line 121
+[06-Nov-2021 08:38:26 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\Program Files\Ampps\www\public\index.php(30): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in 'C:\Program Files\Ampps\www\Core\Router.php' on line 121
+[06-Nov-2021 08:38:46 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\Program Files\Ampps\www\public\index.php(30): Core\Router->dispatch('posts')
+#1 {main}
+Thrown in 'C:\Program Files\Ampps\www\Core\Router.php' on line 121
+[06-Nov-2021 08:39:22 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\Program Files\Ampps\www\public\index.php(30): Core\Router->dispatch('posts/')
+#1 {main}
+Thrown in 'C:\Program Files\Ampps\www\Core\Router.php' on line 121
+[06-Nov-2021 08:39:26 UTC] Uncaught exception: 'Exception' with message 'Method neeAction not found in controller App\Controllers\Posts'
+Stack trace: #0 C:\Program Files\Ampps\www\Core\Router.php(110): Core\Controller->__call('nee', Array)
+#1 C:\Program Files\Ampps\www\public\index.php(30): Core\Router->dispatch('posts/nee')
+#2 {main}
+Thrown in 'C:\Program Files\Ampps\www\Core\Controller.php' on line 50
