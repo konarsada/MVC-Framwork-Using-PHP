@@ -106,6 +106,7 @@ class Router {
                 $action = $this->params['action'];
                 $action = $this->convertToCamelCase($action);
 
+                // check that the action name doesn't end in "Action"
                 if (preg_match('/action$/i', $action) == 0) {
                     $controller_object->$action();
                 }
