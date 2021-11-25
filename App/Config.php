@@ -17,7 +17,7 @@ class Config {
      * Database name
      * @var string
      */
-    const DB_NAME = 'mvc';
+    const DB_NAME = 'mvclogin';
 
     /**
      * Database user
