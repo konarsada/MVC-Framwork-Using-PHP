@@ -95,19 +95,19 @@ class Router {
     public function dispatch($url) {
         $url = $this->removeQueryStringVariables($url);
         
-        if ($this->match($url)) {
+        if($this->match($url)) {
             $controller = $this->params['controller'];
             $controller = $this->convertToStudlyCaps($controller);
             $controller = $this->getNamespace() . $controller;
 
-            if (class_exists($controller)) {
+            if(class_exists($controller)) {
                 $controller_object = new $controller($this->params);
 
                 $action = $this->params['action'];
                 $action = $this->convertToCamelCase($action);
 
                 // check that the action name doesn't end in "Action"
-                if (preg_match('/action$/i', $action) == 0) {
+                if(preg_match('/action$/i', $action) == 0) {
                     $controller_object->$action();
                 }
                 else {
