@@ -72,7 +72,7 @@ class User extends \Core\Model {
         }
 
         if($this->emailExists($this->email)) {
-            $this->errors[] = 'Invalid email';
+            $this->errors[] = 'Email address already taken';
         }
 
         // Password
