@@ -5,12 +5,19 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-    <nav>
-        <a href="/">Home</a> |
-        <a href="/posts/index">Posts</a>
-    </nav>
-
     {% block body %}
+    {% endblock %}
+
+    <!-- jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+    
+    <!-- jquery validate plugin CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+
+    <!-- validation messages-->
+    {% block footer %}
     {% endblock %}
 </body>
 </html>
