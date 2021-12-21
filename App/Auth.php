@@ -2,6 +2,8 @@
 
 namespace App;
 
+use \App\Models\User;
+
 /**
  * Authentication
  */
@@ -43,15 +45,6 @@ class Auth {
     }
 
     /**
-     * Return indicator of whether a user is logged in or not
-     * 
-     * @return boolean
-     */
-    public static function isLoggedIn() {
-        return isset($_SESSION['user_id']);
-    }
-
-    /**
      * Remember the originally requested page in the session
      * 
      * @return void
@@ -69,5 +62,16 @@ class Auth {
      */
     public static function getReturnToPage() {
         return $_SESSION['return_to'] ?? '/';
+    }
+
+    /**
+     * Get the current logged-in user from the session
+     * 
+     * @return mixed the user model or null if not logged in
+     */
+    public static function getUser() {
+        if(isset($_SESSION['user_id'])) {
+            return User::findByID($_SESSION['user_id']);
+        }
     }
 }

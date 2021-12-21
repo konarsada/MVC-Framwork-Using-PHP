@@ -5,6 +5,11 @@ namespace App\Controllers;
 use \Core\View;
 
 /**
+ * The User
+ */
+$user = \App\Auth::getUser();
+
+/**
  * Home controller
  */
 class Home extends \Core\Controller {
