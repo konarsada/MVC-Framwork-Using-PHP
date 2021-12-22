@@ -1,4 +1,10 @@
-.alert {
+body {
+    margin-top: 3em;
+}
+button {
+    margin-top: 10px;
+}
+/*.alert {
     border: 1px solid #ccc;
     padding: 6px;
 }
@@ -10,4 +16,4 @@
 }
 .alert-warning {
     background-color: #fcf8e3;
-}
+}*/
